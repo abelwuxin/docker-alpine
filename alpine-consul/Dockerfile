@@ -1,4 +1,4 @@
-FROM abeldeng/alpine-base
+FROM registry.aliyuncs.com/abeldeng/alpine-base
 MAINTAINER Abel Deng <abeldeng@qq.com>
 
 ENV CONSUL_VERSION=0.6.4 \
