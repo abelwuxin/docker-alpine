@@ -9,7 +9,7 @@ RUN apk add --update curl && \
     cd /tmp && \
     unzip consul_web_ui.zip && \
     mkdir /ui && \
-    mv dist/* /ui && \
+    mv ./* /ui && \
     chown -R consul:consul /ui && \
     apk del --purge curl && \
     rm -rf /var/cache/apk/* consul_web_ui.zip
