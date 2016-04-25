@@ -1,5 +1,9 @@
 use-consul:
   image: registry.aliyuncs.com/abeldeng/alpine-consul
+  environment:
+    - HOSTNAME=mob.abeldeng.com
+    - JOIN_HOSTNAME=mob.abeldeng.com
+    - CONSUL_DOMAIN=abeldeng
   
 use-consul-nginx-nodejs:
   image: registry.aliyuncs.com/abeldeng/use-consul-nginx-nodejs
