@@ -6,5 +6,12 @@ use-consul-nginx-nodejs:
   ports:
     - "80:80"
   links:
-    - use-consul
+    - use-consul:consul-agent
+    
+use-consul-ui:
+  image: registry.aliyuncs.com/abeldeng/alpine-consul-ui
+  ports:
+    - "8500:8500"
+  links:
+    - use-consul:consul-agent
   
