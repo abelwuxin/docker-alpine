@@ -1,0 +1,10 @@
+use-consul:
+  image: registry.aliyuncs.com/abeldeng/alpine-consul
+  
+use-consul-nginx-nodejs:
+  image: registry.aliyuncs.com/abeldeng/use-consul-nginx-nodejs
+  ports:
+    - "80:80"
+  links:
+    - use-consul
+  
